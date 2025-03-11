@@ -65,6 +65,7 @@
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML"></script>
   </head>
   <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -155,7 +156,7 @@
 
               <div class="is-size-5 publication-authors">
                 <sup>1</sup>Tsinghua Shenzhen International Graduate School &nbsp;&nbsp;
-                <sup>2</sup>School of Software, Beihang University &nbsp;&nbsp;
+                <sup>2</sup>School of Software, Beihang University &nbsp;&nbsp; <br>
                 <sup>3</sup>School of Finance, Renmin University of China &nbsp;&nbsp; 
                 <sup>4</sup>Department of Automation, Tsinghua University <br />
                 <sup>†</sup>Project Lead &nbsp;&nbsp; <sup>✉</sup>Corresponding Authors
@@ -339,40 +340,42 @@
           <h2 class="title is-3">Method</h2>
         </div>
         <br />
-        <div class="columns is-centered is-vcentered">
-          <!-- <div class="column is-half">
-            <img src="./assets/overview_inference.png" class="" alt="" />
-          </div> -->
-          <div>
-            <img src="./images/pipeline.png" class="" alt="" />
-          </div>
-          <!-- <div class="column is-half">
-            MV-Adapter is a plug-and-play adapter that learns multi-view priors
-            transferable to derivatives of T2I models without
-            <font color="#3a86ff"><b>specific tuning</b></font
-            >, and enable T2Is to generate multi-view consistent images
-            <font color="#3a86ff"><b>under various conditions</b></font
-            >. At inference time, our MV-Adapter, which contains a condition
-            guider <font color="#ffe699"><b>(yellow)</b></font> and the
-            decoupled attention layers <font color="#bdd7ee"><b>(blue)</b></font
-            >, can be directly inserted into a personalized or distilled T2I to
-            constitute the multi-view generator.
-          </div> -->
-          <div>
-            Personalize Anything anchors subject identity in early denoising through 
-            <font color="#3a86ff"><b>mask-guided token replacement</b></font> 
-            with preserved positional encoding, 
-            and transitions to multi-modal attention for semantic fusion with text in later steps. 
-            During token replacement, we inject variations via 
-            <font color="#3a86ff"><b>patch perturbations</b></font>. 
-            This timestep-adaptive strategy balances identity preservation and generative flexibility.
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <!-- <div class="column is-half">
+              <img src="./assets/overview_inference.png" class="" alt="" />
+            </div> -->
+            <div>
+              <img src="./images/pipeline.png" class="" alt="" />
+            </div>
+            <!-- <div class="column is-half">
+              MV-Adapter is a plug-and-play adapter that learns multi-view priors
+              transferable to derivatives of T2I models without
+              <font color="#3a86ff"><b>specific tuning</b></font
+              >, and enable T2Is to generate multi-view consistent images
+              <font color="#3a86ff"><b>under various conditions</b></font
+              >. At inference time, our MV-Adapter, which contains a condition
+              guider <font color="#ffe699"><b>(yellow)</b></font> and the
+              decoupled attention layers <font color="#bdd7ee"><b>(blue)</b></font
+              >, can be directly inserted into a personalized or distilled T2I to
+              constitute the multi-view generator.
+            </div> -->
+            <div>
+              Personalize Anything anchors subject identity in early denoising through 
+              <font color="#3a86ff"><b>mask-guided token replacement</b></font> 
+              with preserved positional encoding, 
+              and transitions to multi-modal attention for semantic fusion with text in later steps. 
+              During token replacement, we inject variations via 
+              <font color="#3a86ff"><b>patch perturbations</b></font>. 
+              This timestep-adaptive strategy balances identity preservation and generative flexibility.
+            </div>
           </div>
         </div>
         <div class="columns is-centered">
           <div class="column is-full-width">
             <br />
             <img src="./images/method_extensions.png" class="" alt="" />
-            Personalize Anything enables: 
+            It enables: 
             (a) <font color="#3a86ff"><b>layout-guided generation</b></font> 
               by translating token-injected regions, 
             (b) <font color="#3a86ff"><b>multi-subject composition</b></font> 
@@ -397,7 +400,7 @@
               <source src="./videos/more_results_t2mv.mp4" type="video/mp4" />
             </video> -->
             <div>
-              Our method produces high-fidelity images that are highly consistent with the specified subjects, without necessitating training or fine-tuning.
+              It produces high-fidelity images that are highly consistent with the specified subjects, without necessitating training or fine-tuning.
             </div>
           </div>
         </div>
@@ -417,7 +420,7 @@
               <source src="./videos/more_results_i2mv.mp4" type="video/mp4" />
             </video> -->
             <div>
-              Our approach manages to maintain natural interactions among subjects via layout-guided generation, while ensuring each subject retains its identical characteristics and distinctiveness.
+              It manages to maintain natural interactions among subjects via layout-guided generation, while ensuring each subject retains its identical characteristics and distinctiveness.
             </div>
           </div>
         </div>
@@ -434,7 +437,7 @@
             <br />
             <img src="./images/comparison_subject_scene.png" class="" alt="" />
             <div>
-            Our method successfully generates natural images while effectively preserving the details of the subjects.
+            It successfully generates natural images while effectively preserving the details of the subjects.
             </div>
             <!-- <video autoplay controls muted loop playsinline height="100%">
               <source
@@ -456,7 +459,7 @@
             <br />
             <img src="./images/applications.png" class="" alt="" />
             <div>
-              <b>Personalize Anything</b> naturally extends to diverse real-world applications, including subject-driven image generation with layout guidance, inpainting and outpainting.
+              It naturally extends to diverse real-world applications, including subject-driven image generation with layout guidance, inpainting and outpainting.
             </div>           
             <!-- <video autoplay controls muted loop playsinline height="100%">
               <source
@@ -484,7 +487,8 @@
             </video> -->
             <div>
               We conduct ablation studies on single-subject personalization, 
-              examining the effects of token replacement timestep threshold \(\tau\) 
+              examining the effects of token replacement timestep threshold 
+              \( \tau \) 
               and the patch perturbation strategy.
             </div>
           </div>
@@ -914,7 +918,7 @@
     </script>
     <!---------------------------------------------Functions Over-------------------------------------------------->
 
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="hero-body">
         <div class="container is-max-desktop is-centered has-text-centered">
           <h1 class="title is-3">Text-condition Texture Generation</h1>
@@ -967,7 +971,7 @@
 
       createCarousel(modelPaths1, "results-carousel1", createModelView_text);
       createCarousel(modelPaths2, "results-carousel2", createModelView_image);
-    </script>
+    </script> -->
 
     <section class="section" id="BibTeX">
       <div class="container is-max-desktop content">
