@@ -8,7 +8,7 @@
     <meta
       name="keywords"
       content="Subject personalization, T2I Image Generation, Diffusion Models" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     <title>Personalize Anything for Free with Diffusion Transformer</title>
 
     <link
@@ -90,7 +90,13 @@
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link"> More Research </a>
             <div class="navbar-dropdown">
-              <a
+              <a 
+                class="navbar-item" 
+                href="https://huanngzh.github.io/Parts2Whole/"
+                target="_blank">
+                Parts2Whole
+              </a >
+              <!-- <a
                 class="navbar-item"
                 href="https://huanngzh.github.io/MV-Adapter-Page/"
                 target="_blank">
@@ -113,7 +119,7 @@
                 href="https://huanngzh.github.io/MIDI-Page/"
                 target="_blank">
                 MIDI
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -133,12 +139,12 @@
                   href="https://scholar.google.com/citations?user=riCXH64AAAAJ"
                   target="_blank"
                   >Haoran Feng</a
-                ><sup>1</sup>,
+                ><sup>1*</sup>,
                 <a
                   href="https://scholar.google.com.hk/citations?user=U3VbX6kAAAAJ"
                   target="_blank"
                   >Zehuan Huang</a
-                ><sup>2†✉</sup>,
+                ><sup>2*†</sup>,
                 <a
                   href="https://scholar.google.com/citations?user=HL3uwegAAAAJ"
                   target="_blank"
@@ -157,7 +163,7 @@
                 <sup>2</sup>School of Software, Beihang University &nbsp;&nbsp; <br>
                 <sup>3</sup>School of Finance, Renmin University of China &nbsp;&nbsp; 
                 <sup>4</sup>Department of Automation, Tsinghua University <br />
-                <sup>†</sup>Project Lead &nbsp;&nbsp; <sup>✉</sup>Corresponding Authors
+                <sup>*</sup>Equal contribution &nbsp;&nbsp;<sup>†</sup>Project Lead &nbsp;&nbsp; <sup>✉</sup>Corresponding Authors
               </div>
 
               <div class="column has-text-centered">
@@ -220,7 +226,8 @@
                     background-color: rgba(0, 0, 0, 0.665);
                     margin-top: 1em;
                   " />
-                  Create images with high text alignment, object consistency, diversity, and controllability using foundational T2I models.
+                  Customize any subject with advanced DiT without additional fine-tuning.
+                  <!-- Create images with high text alignment, object consistency, diversity, and controllability using foundational T2I models. -->
                 <!-- Create High-fidelity Multi-view Images with Various Base T2I Models and Various Conditions. -->
               </div>
             </div>
@@ -249,7 +256,7 @@
             <div class="column is-four-fifths">
               The images show our method's results in single-subject personalization, 
               layout-guided subject personalization, multi-subject personalization, and more, 
-              demonstrating strong object consistency and controllability.
+              demonstrating strong identity preservation and versatility.
               <!-- <b>Row 1</b> shows results of our method in
               <font color="#3a86ff"
                 ><b
@@ -433,7 +440,7 @@
               <h2 class="title is-3">Qualitative Comparisons on Subject-scene Composition</h2>
             </div>
             <br />
-            <img src="./images/comparison_subject_scene.png" class="" alt="" />
+            <img src="./images/comparison_subject_scene.png" class="" alt="" width="60%"/>
             <div>
             Our method successfully generates natural images while effectively preserving the details of the subjects.
             </div>
