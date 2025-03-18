@@ -8,7 +8,7 @@
     <meta
       name="keywords"
       content="Subject personalization, T2I Image Generation, Diffusion Models" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Personalize Anything for Free with Diffusion Transformer</title>
 
     <link
@@ -90,12 +90,12 @@
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link"> More Research </a>
             <div class="navbar-dropdown">
-              <a 
-                class="navbar-item" 
+              <a
+                class="navbar-item"
                 href="https://huanngzh.github.io/Parts2Whole/"
                 target="_blank">
                 Parts2Whole
-              </a >
+              </a>
             </div>
           </div>
         </div>
@@ -125,8 +125,10 @@
                   href="https://scholar.google.com/citations?user=HL3uwegAAAAJ"
                   target="_blank"
                   >Lin Li</a
-                ><sup>3</sup>, 
-                <a href="https://www.au.tsinghua.edu.cn/info/1096/1543.htm" target="_blank"
+                ><sup>3</sup>,
+                <a
+                  href="https://www.au.tsinghua.edu.cn/info/1096/1543.htm"
+                  target="_blank"
                   >Hairong Lv</a
                 ><sup>4</sup>,
                 <a href="https://lucassheng.github.io/" target="_blank"
@@ -135,11 +137,14 @@
               </div>
 
               <div class="is-size-5 publication-authors">
-                <sup>1</sup>Tsinghua Shenzhen International Graduate School &nbsp;&nbsp;
-                <sup>2</sup>School of Software, Beihang University &nbsp;&nbsp; <br>
-                <sup>3</sup>School of Finance, Renmin University of China &nbsp;&nbsp; 
-                <sup>4</sup>Department of Automation, Tsinghua University <br />
-                <sup>*</sup>Equal contribution &nbsp;&nbsp;<sup>†</sup>Project Lead &nbsp;&nbsp; <sup>✉</sup>Corresponding Authors
+                <sup>1</sup>Tsinghua Shenzhen International Graduate School
+                &nbsp;&nbsp; <sup>2</sup>School of Software, Beihang University
+                &nbsp;&nbsp; <br />
+                <sup>3</sup>School of Finance, Renmin University of China
+                &nbsp;&nbsp; <sup>4</sup>Department of Automation, Tsinghua
+                University <br />
+                <sup>*</sup>Equal contribution &nbsp;&nbsp;<sup>†</sup>Project
+                Lead &nbsp;&nbsp; <sup>✉</sup>Corresponding Authors
               </div>
 
               <div class="column has-text-centered">
@@ -202,9 +207,11 @@
                     background-color: rgba(0, 0, 0, 0.665);
                     margin-top: 1em;
                   " />
-                  Customize any subject with advanced DiT without additional fine-tuning.
-                  <!-- Create images with high text alignment, object consistency, diversity, and controllability using foundational T2I models. -->
-                <!-- Create High-fidelity Multi-view Images with Various Base T2I Models and Various Conditions. -->
+                Customize any subject with advanced DiT without additional
+                fine-tuning.
+              </div>
+              <div style="padding-top: 1.5rem">
+                <img src="./images/pr.png" class="" alt="" />
               </div>
             </div>
           </div>
@@ -216,7 +223,7 @@
       <div class="hero-body">
         <div class="container is-centered">
           <div class="has-text-centered">
-            <img src="./images/teaser.png" class="" alt="" width="80%"/>
+            <img src="./images/teaser.png" class="" alt="" width="80%" />
             <!-- <video
               id="dollyzoom"
               autoplay
@@ -230,9 +237,10 @@
           </div>
           <div class="columns is-centered">
             <div class="column is-four-fifths">
-              The images show our method's results in single-subject personalization, 
-              layout-guided subject personalization, multi-subject personalization, and more, 
-              demonstrating strong identity preservation and versatility.
+              The images show our method's results in single-subject
+              personalization, layout-guided subject personalization,
+              multi-subject personalization, and more, demonstrating strong
+              identity preservation and versatility.
               <!-- <b>Row 1</b> shows results of our method in
               <font color="#3a86ff"
                 ><b
@@ -296,17 +304,29 @@
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                Personalized image generation aims to produce images of user-specified concepts while enabling flexible editing.
-                Recent training-free approaches, while exhibit higher computational efficiency than training-based methods, 
-                struggle with identity preservation, applicability, and compatibility with diffusion transformers (DiTs).
-                In this paper, we uncover the untapped potential of DiT, where simply replacing denoising tokens with those of a reference subject achieves zero-shot subject reconstruction.
-                This simple yet effective feature injection technique unlocks diverse scenarios, from personalization to image editing.
-                Building upon this observation, we propose <b>Personalize Anything</b>, a training-free framework that achieves personalized image generation in DiT through:
-                (1) timestep-adaptive token replacement that enforces subject consistency via early-stage injection and enhances flexibility through late-stage regularization, 
-                and (2) patch perturbation strategies to boost structural diversity. 
-                Our method seamlessly supports layout-guided generation, multi-subject personalization, and mask-controlled editing.
-                Evaluations demonstrate state-of-the-art performance in identity preservation and versatility.
-                Our work establishes new insights into DiTs while delivering a practical paradigm for efficient personalization.
+                Personalized image generation aims to produce images of
+                user-specified concepts while enabling flexible editing. Recent
+                training-free approaches, while exhibit higher computational
+                efficiency than training-based methods, struggle with identity
+                preservation, applicability, and compatibility with diffusion
+                transformers (DiTs). In this paper, we uncover the untapped
+                potential of DiT, where simply replacing denoising tokens with
+                those of a reference subject achieves zero-shot subject
+                reconstruction. This simple yet effective feature injection
+                technique unlocks diverse scenarios, from personalization to
+                image editing. Building upon this observation, we propose
+                <b>Personalize Anything</b>, a training-free framework that
+                achieves personalized image generation in DiT through: (1)
+                timestep-adaptive token replacement that enforces subject
+                consistency via early-stage injection and enhances flexibility
+                through late-stage regularization, and (2) patch perturbation
+                strategies to boost structural diversity. Our method seamlessly
+                supports layout-guided generation, multi-subject
+                personalization, and mask-controlled editing. Evaluations
+                demonstrate state-of-the-art performance in identity
+                preservation and versatility. Our work establishes new insights
+                into DiTs while delivering a practical paradigm for efficient
+                personalization.
               </p>
             </div>
           </div>
@@ -342,13 +362,15 @@
               constitute the multi-view generator.
             </div> -->
             <div>
-              Personalize Anything anchors subject identity in early denoising through 
-              <font color="#3a86ff"><b>mask-guided token replacement</b></font> 
-              with preserved positional encoding, 
-              and transitions to multi-modal attention for semantic fusion with text in later steps. 
-              During token replacement, we inject variations via 
-              <font color="#3a86ff"><b>patch perturbations</b></font>. 
-              This timestep-adaptive strategy balances identity preservation and generative flexibility.
+              Personalize Anything anchors subject identity in early denoising
+              through
+              <font color="#3a86ff"><b>mask-guided token replacement</b></font>
+              with preserved positional encoding, and transitions to multi-modal
+              attention for semantic fusion with text in later steps. During
+              token replacement, we inject variations via
+              <font color="#3a86ff"><b>patch perturbations</b></font
+              >. This timestep-adaptive strategy balances identity preservation
+              and generative flexibility.
             </div>
           </div>
         </div>
@@ -356,13 +378,14 @@
           <div class="column is-full-width">
             <br />
             <img src="./images/method_extensions.png" class="" alt="" />
-            Our method enables: 
-            (a) <font color="#3a86ff"><b>layout-guided generation</b></font> 
-              by translating token-injected regions, 
-            (b) <font color="#3a86ff"><b>multi-subject composition</b></font> 
-              through sequential token injection, and 
-            (c) <font color="#3a86ff"><b>inpainting</b></font> and <font color="#3a86ff"><b>outpainting</b></font> 
-              via specifying masks and increased replacement.
+            Our method enables: (a)
+            <font color="#3a86ff"><b>layout-guided generation</b></font> by
+            translating token-injected regions, (b)
+            <font color="#3a86ff"><b>multi-subject composition</b></font>
+            through sequential token injection, and (c)
+            <font color="#3a86ff"><b>inpainting</b></font> and
+            <font color="#3a86ff"><b>outpainting</b></font>
+            via specifying masks and increased replacement.
           </div>
         </div>
       </div>
@@ -373,7 +396,9 @@
         <div class="columns is-centered has-text-centered">
           <div class="column is-full-width">
             <div class="has-text-centered">
-              <h2 class="title is-3">Qualitative Comparisons on Single-subject Personalization</h2>
+              <h2 class="title is-3">
+                Qualitative Comparisons on Single-subject Personalization
+              </h2>
             </div>
             <br />
             <img src="./images/comparison_single_subject.png" class="" alt="" />
@@ -381,7 +406,9 @@
               <source src="./videos/more_results_t2mv.mp4" type="video/mp4" />
             </video> -->
             <div>
-              Our method produces high-fidelity images that are highly consistent with the specified subjects, without necessitating training or fine-tuning.
+              Our method produces high-fidelity images that are highly
+              consistent with the specified subjects, without necessitating
+              training or fine-tuning.
             </div>
           </div>
         </div>
@@ -393,7 +420,9 @@
         <div class="columns is-centered has-text-centered">
           <div class="column is-full-width">
             <div class="has-text-centered">
-              <h2 class="title is-3">Qualitative Comparisons on Multi-subject Personalization</h2>
+              <h2 class="title is-3">
+                Qualitative Comparisons on Multi-subject Personalization
+              </h2>
             </div>
             <br />
             <img src="./images/comparison_multi_subject.png" class="" alt="" />
@@ -401,7 +430,9 @@
               <source src="./videos/more_results_i2mv.mp4" type="video/mp4" />
             </video> -->
             <div>
-              Our method manages to maintain natural interactions among subjects via layout-guided generation, while ensuring each subject retains its identical characteristics and distinctiveness.
+              Our method manages to maintain natural interactions among subjects
+              via layout-guided generation, while ensuring each subject retains
+              its identical characteristics and distinctiveness.
             </div>
           </div>
         </div>
@@ -420,12 +451,12 @@
             <div>
             Our method successfully generates natural images while effectively preserving the details of the subjects.
             </div> -->
-            <!-- <video autoplay controls muted loop playsinline height="100%">
+    <!-- <video autoplay controls muted loop playsinline height="100%">
               <source
                 src="./videos/more_results_sketch2mv.mp4"
                 type="video/mp4" />  
             </video> -->
-          <!-- </div>
+    <!-- </div>
         </div>
       </div>
     </section> -->
@@ -440,8 +471,10 @@
             <br />
             <img src="./images/applications.png" class="" alt="" />
             <div>
-              Our method naturally extends to diverse real-world applications, including subject-driven image generation with layout guidance, inpainting and outpainting.
-            </div>           
+              Our method naturally extends to diverse real-world applications,
+              including subject-driven image generation with layout guidance,
+              inpainting and outpainting.
+            </div>
             <!-- <video autoplay controls muted loop playsinline height="100%">
               <source
                 src="./videos/more_results_text_to_3d.mp4"
@@ -467,10 +500,9 @@
                 type="video/mp4" />
             </video> -->
             <div>
-              We conduct ablation studies on single-subject personalization, 
-              examining the effects of token replacement timestep threshold 
-              \( \tau \) 
-              and the patch perturbation strategy.
+              We conduct ablation studies on single-subject personalization,
+              examining the effects of token replacement timestep threshold \(
+              \tau \) and the patch perturbation strategy.
             </div>
           </div>
         </div>
@@ -523,7 +555,10 @@
                   target="_blank"
                   >Personalize-Anything-Page</a
                 >. The website template is forked from
-                <a href="https://github.com/huanngzh/MV-Adapter-Page" target="_blank">MV-Adapter-Page</a
+                <a
+                  href="https://github.com/huanngzh/MV-Adapter-Page"
+                  target="_blank"
+                  >MV-Adapter-Page</a
                 >.
               </p>
             </div>
